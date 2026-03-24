@@ -1,0 +1,32 @@
+<svg width="200" height="56" viewBox="0 0 200 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5B0"/>
+      <stop offset="50%" style="stop-color:#C9A96E"/>
+      <stop offset="100%" style="stop-color:#9A7540"/>
+    </linearGradient>
+  </defs>
+
+  <!-- K monogram in circle -->
+  <circle cx="28" cy="28" r="22" stroke="url(#goldGrad)" stroke-width="1.5" fill="none"/>
+  <!-- K letterform inside circle -->
+  <line x1="21" y1="17" x2="21" y2="39" stroke="#C9A96E" stroke-width="2" stroke-linecap="round"/>
+  <line x1="21" y1="28" x2="33" y2="17" stroke="#C9A96E" stroke-width="2" stroke-linecap="round"/>
+  <line x1="21" y1="28" x2="33" y2="39" stroke="#C9A96E" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Wordmark KALVARA -->
+  <text x="62" y="33" 
+    font-family="Cormorant Garamond, Georgia, serif" 
+    font-size="26" 
+    font-weight="600" 
+    letter-spacing="4"
+    fill="#FAFAF8">KALVARA</text>
+
+  <!-- Tagline -->
+  <text x="63" y="46"
+    font-family="DM Sans, Helvetica, sans-serif"
+    font-size="8"
+    font-weight="400"
+    letter-spacing="3.5"
+    fill="#888888">KOST PREMIUM SURABAYA</text>
+</svg>
