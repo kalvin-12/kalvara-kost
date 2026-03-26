@@ -797,7 +797,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navMenu">
       <ul class="navbar-nav align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="#kamar">Kamar</a></li>
+        <li class="nav-item"><a class="nav-link" href="kamar.html">Kamar</a></li>
         <li class="nav-item"><a class="nav-link" href="#fasilitas">Fasilitas</a></li>
         <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
         <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
@@ -818,7 +818,7 @@
         <h1 class="hero-title">Tempat Tinggal<br><em>Nyaman &amp; Elegan</em><br>untuk Anda</h1>
         <p class="hero-sub">Temukan hunian kost terbaik dengan fasilitas premium, keamanan 24 jam, dan lokasi strategis di jantung Surabaya. Booking mudah via WhatsApp.</p>
         <div class="d-flex gap-3 flex-wrap">
-          <a href="#kamar" class="btn-gold"><i class="bi bi-search"></i> Lihat Kamar</a>
+          <a href="kamar.html" class="btn-gold"><i class="bi bi-search"></i> Lihat Kamar</a>
           <a href="#booking" class="btn-outline-gold"><i class="bi bi-whatsapp"></i> Booking via WA</a>
         </div>
         <div class="hero-stats">
@@ -901,40 +901,18 @@
 <!-- KAMAR -->
 <section id="kamar">
   <div class="container">
-    <div class="row mb-4">
+    <div class="row mb-5 align-items-end">
       <div class="col-lg-6">
-        <div class="section-eyebrow reveal">Unit Tersedia</div>
-        <h2 class="section-title reveal">Pilihan Kamar<br>Terbaik Kami</h2>
+        <div class="section-eyebrow reveal">Unit Pilihan</div>
+        <h2 class="section-title reveal">Temukan Hunian<br>Impian Anda</h2>
       </div>
-      <div class="col-lg-6 d-flex align-items-end">
-        <p class="section-desc reveal">Setiap kamar dirancang dengan detail premium, furnitur berkualitas, dan fasilitas lengkap untuk kenyamanan Anda.</p>
+      <div class="col-lg-6 text-lg-end">
+        <p class="section-desc reveal ms-auto mb-4">Kami menyediakan berbagai pilihan tipe kamar dengan desain interior yang estetik dan fasilitas lengkap untuk kenyamanan maksimal Anda.</p>
+        <a href="kamar.html" class="btn-outline-gold reveal"><i class="bi bi-grid-3x3-gap me-2"></i> Lihat Semua Kamar</a>
       </div>
     </div>
 
-    <!-- Filter Block -->
-    <div class="filter-block reveal">
-      <span class="filter-row-label">Tipe Penghuni</span>
-      <div class="filter-tabs" style="margin-bottom:0">
-        <button class="filter-tab active" onclick="filterKamar('semua',this)">Semua</button>
-        <button class="filter-tab" onclick="filterKamar('putra',this)">Putra</button>
-        <button class="filter-tab" onclick="filterKamar('putri',this)">Putri</button>
-        <button class="filter-tab" onclick="filterKamar('campur',this)">Campur</button>
-        <button class="filter-tab" onclick="filterKamar('pasutri',this)">Pasutri</button>
-      </div>
-      <div class="filter-divider"></div>
-      <span class="filter-row-label">Gaya Interior</span>
-      <div style="display:flex;flex-wrap:wrap;gap:8px" id="interior-filters">
-        <button class="interior-tag active" onclick="filterInterior('semua',this)"><span class="tag-dot" style="background:var(--gold)"></span>Semua Gaya</button>
-        <button class="interior-tag" onclick="filterInterior('minimalis',this)"><span class="tag-dot dot-minimalis"></span>Minimalis</button>
-        <button class="interior-tag" onclick="filterInterior('japandi',this)"><span class="tag-dot dot-japandi"></span>Japandi</button>
-        <button class="interior-tag" onclick="filterInterior('industrial',this)"><span class="tag-dot dot-industrial"></span>Industrial</button>
-        <button class="interior-tag" onclick="filterInterior('bohemian',this)"><span class="tag-dot dot-bohemian"></span>Bohemian</button>
-        <button class="interior-tag" onclick="filterInterior('modern',this)"><span class="tag-dot dot-modern"></span>Modern Classic</button>
-      </div>
-      <div class="active-filters" id="active-filter-label">Menampilkan <span id="shown-count">6</span> kamar tersedia</div>
-    </div>
-
-    <!-- Kamar Grid -->
+    <!-- Kamar Grid (Featured 3 Rooms) -->
     <div class="row g-4" id="kamar-grid">
       <div class="col-lg-4 col-md-6 kamar-item" data-type="putri" data-interior="minimalis" data-location="gubeng" data-price="1200000">
         <div class="kamar-card reveal-scale" onclick="location.href='kamar-standard-deluxe.html'" style="cursor:pointer">
@@ -948,13 +926,11 @@
               <span class="facility-tag"><i class="bi bi-wifi"></i>WiFi</span>
               <span class="facility-tag"><i class="bi bi-thermometer-snow"></i>AC</span>
               <span class="facility-tag"><i class="bi bi-droplet"></i>KM Dalam</span>
-              <span class="facility-tag"><i class="bi bi-tv"></i>TV</span>
             </div>
           </div>
           <div class="kamar-footer">
             <small style="color:var(--muted);font-size:.7rem"><i class="bi bi-rulers me-1"></i>3×4 m²</small>
             <a href="kamar-standard-deluxe.html" class="btn-detail">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-            <a href="https://wa.me/6285158009999?text=Halo%20Kalvara%2C%20saya%20mau%20booking%20*Standard%20Deluxe*%20(Kost%20Putri)." class="btn-wa" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>Book via WA</a>
           </div>
         </div>
       </div>
@@ -970,13 +946,11 @@
               <span class="facility-tag"><i class="bi bi-wifi"></i>WiFi</span>
               <span class="facility-tag"><i class="bi bi-thermometer-snow"></i>AC</span>
               <span class="facility-tag"><i class="bi bi-droplet"></i>KM Dalam</span>
-              <span class="facility-tag"><i class="bi bi-lightning-charge"></i>Listrik Token</span>
             </div>
           </div>
           <div class="kamar-footer">
             <small style="color:var(--muted);font-size:.7rem"><i class="bi bi-rulers me-1"></i>4×4 m²</small>
             <a href="kamar-superior-room.html" class="btn-detail">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-            <a href="https://wa.me/6285158009999?text=Halo%20Kalvara%2C%20saya%20mau%20booking%20*Superior%20Room*%20(Kost%20Putra)." class="btn-wa" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>Book via WA</a>
           </div>
         </div>
       </div>
@@ -991,69 +965,22 @@
             <div class="kamar-facilities">
               <span class="facility-tag"><i class="bi bi-wifi"></i>WiFi</span>
               <span class="facility-tag"><i class="bi bi-thermometer-snow"></i>AC</span>
-              <span class="facility-tag"><i class="bi bi-droplet"></i>KM Dalam</span>
               <span class="facility-tag"><i class="bi bi-cup-hot"></i>Pantry</span>
             </div>
           </div>
           <div class="kamar-footer">
             <small style="color:var(--muted);font-size:.7rem"><i class="bi bi-rulers me-1"></i>4×5 m²</small>
             <a href="kamar-deluxe-studio.html" class="btn-detail">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-            <a href="https://wa.me/6285158009999?text=Halo%20Kalvara%2C%20saya%20mau%20tanya%20promo%20*Deluxe%20Studio*%20(Kost%20Campur)." class="btn-wa" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>Book via WA</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 kamar-item" data-type="pasutri" data-interior="bohemian" data-location="rungkut" data-price="2500000">
-        <div class="kamar-card reveal-scale" onclick="location.href='kamar-family-suite.html'" style="cursor:pointer">
-          <div class="kamar-img"><img src="images/rooms/family-suite-1.jpg" alt="Family Suite"/><span class="kamar-badge tersedia">Tersedia</span></div>
-          <div class="kamar-body">
-            <div class="kamar-type">Kost Pasutri</div>
-            <div class="interior-badge"><span class="dot dot-bohemian"></span>Bohemian</div>
-            <div class="kamar-name">Family Suite</div>
-            <div class="kamar-price">Rp 2.500.000 <span>/ bulan</span></div>
-            <div class="kamar-facilities">
-              <span class="facility-tag"><i class="bi bi-wifi"></i>WiFi</span>
-              <span class="facility-tag"><i class="bi bi-thermometer-snow"></i>AC 2 Unit</span>
-              <span class="facility-tag"><i class="bi bi-droplet"></i>KM Dalam</span>
-              <span class="facility-tag"><i class="bi bi-cup-hot"></i>Dapur Mini</span>
-            </div>
-          </div>
-          <div class="kamar-footer">
-            <small style="color:var(--muted);font-size:.7rem"><i class="bi bi-rulers me-1"></i>5×6 m²</small>
-            <a href="kamar-family-suite.html" class="btn-detail">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-            <a href="https://wa.me/6285158009999?text=Halo%20Kalvara%2C%20saya%20mau%20booking%20*Family%20Suite*%20(Kost%20Pasutri)." class="btn-wa" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>Book via WA</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 kamar-item" data-type="putri" data-interior="modern" data-location="gubeng" data-price="2200000">
-        <div class="kamar-card reveal-scale" onclick="location.href='kamar-vip-premium.html'" style="cursor:pointer">
-          <div class="kamar-img"><img src="images/rooms/vip-premium-1.jpg" alt="VIP Premium"/><span class="kamar-badge tersedia">Tersedia</span></div>
-          <div class="kamar-body">
-            <div class="kamar-type">Kost Putri</div>
-            <div class="interior-badge"><span class="dot dot-modern"></span>Modern Classic</div>
-            <div class="kamar-name">VIP Premium</div>
-            <div class="kamar-price">Rp 2.200.000 <span>/ bulan</span></div>
-            <div class="kamar-facilities">
-              <span class="facility-tag"><i class="bi bi-wifi"></i>WiFi 50Mbps</span>
-              <span class="facility-tag"><i class="bi bi-thermometer-snow"></i>AC</span>
-              <span class="facility-tag"><i class="bi bi-droplet"></i>KM Dalam</span>
-              <span class="facility-tag"><i class="bi bi-star"></i>Balkon</span>
-            </div>
-          </div>
-          <div class="kamar-footer">
-            <small style="color:var(--muted);font-size:.7rem"><i class="bi bi-rulers me-1"></i>4×5 m²</small>
-            <a href="kamar-vip-premium.html" class="btn-detail">Lihat Detail <i class="bi bi-arrow-right"></i></a>
-            <a href="https://wa.me/6285158009999?text=Halo%20Kalvara%2C%20saya%20mau%20booking%20*VIP%20Premium*%20(Kost%20Putri)." class="btn-wa" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>Book via WA</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 kamar-item" data-type="putra" data-interior="industrial" data-location="wonokromo" data-price="2000000">
-        <div class="kamar-card reveal-scale" onclick="location.href='kamar-executive-room.html'" style="cursor:pointer">
-          <div class="kamar-img"><img src="images/rooms/executive-room-1.jpg" alt="Executive Room"/><span class="kamar-badge penuh">Penuh</span></div>
-          <div class="kamar-body">
-            <div class="kamar-type">Kost Putra</div>
-            <div class="interior-badge"><span class="dot dot-industrial"></span>Industrial</div>
-            <div class="kamar-name">Executive Room</div>
-            <div class="kamar-price">Rp 2.000.000 <span>/ bulan</span></div>
+    </div>
+    
+    <div class="text-center mt-5 reveal">
+      <a href="kamar.html" class="btn-gold">Lihat Semua 12+ Kamar <i class="bi bi-arrow-right ms-2"></i></a>
+    </div>
+  </div>
+</section>
             <div class="kamar-facilities">
               <span class="facility-tag"><i class="bi bi-wifi"></i>WiFi</span>
               <span class="facility-tag"><i class="bi bi-thermometer-snow"></i>AC</span>
@@ -1568,7 +1495,7 @@
       <div class="col-lg-2 col-md-4">
         <div class="footer-title">Navigasi</div>
         <ul class="footer-links">
-          <li><a href="#kamar">Kamar Tersedia</a></li>
+          <li><a href="kamar.html">Semua Kamar</a></li>
           <li><a href="#fasilitas">Fasilitas</a></li>
           <li><a href="#lokasi">Lokasi</a></li>
           <li><a href="#testimoni">Testimoni</a></li>
@@ -1578,11 +1505,11 @@
       <div class="col-lg-3 col-md-4">
         <div class="footer-title">Tipe Kamar</div>
         <ul class="footer-links">
-          <li><a href="#kamar">Kost Putra</a></li>
-          <li><a href="#kamar">Kost Putri</a></li>
-          <li><a href="#kamar">Kost Campur</a></li>
-          <li><a href="#kamar">Kost Pasutri</a></li>
-          <li><a href="#kamar">VIP Premium</a></li>
+          <li><a href="kamar.html">Kost Putra</a></li>
+          <li><a href="kamar.html">Kost Putri</a></li>
+          <li><a href="kamar.html">Kost Campur</a></li>
+          <li><a href="kamar.html">Kost Pasutri</a></li>
+          <li><a href="kamar.html">VIP Premium</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-4">
